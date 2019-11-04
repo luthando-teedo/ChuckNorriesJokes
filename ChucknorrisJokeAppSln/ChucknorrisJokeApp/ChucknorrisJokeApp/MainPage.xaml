@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ChucknorrisJokeApp.MainPage"
+             BackgroundImageSource="wallpa.jpg"
+            >
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        
+        <Label Text="Welcome To Chucknorris Jokes" 
+           HorizontalOptions="CenterAndExpand"
+           VerticalOptions="CenterAndExpand"
+               FontSize="Medium"
+               FontFamily="Sans"
+               TextColor="WhiteSmoke"/>
+        
+        
+        <Image Source="loughting.png" x:Name="Emoji" HeightRequest="80" WidthRequest="80" />
+
+
+        <Label x:Name="JokeLabel" 
+               TextColor="Black"  
+               HeightRequest="150" 
+               BackgroundColor="WhiteSmoke"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand"
+               VerticalTextAlignment="Center"
+               />
+
+
+        <Button x:Name="JokeButton" 
+                Clicked="JokeButton_Clicked" 
+                Text="Get Random Joke" 
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                BackgroundColor="OrangeRed"
+                CornerRadius="100"/>
+        
+        <Button x:Name="NavButton" 
+                Clicked="NavButton_Clicked" 
+                Text="Categories" 
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                BackgroundColor="OrangeRed"
+                CornerRadius="10"/>
+    </StackLayout>
+
+   
+
+</ContentPage>
